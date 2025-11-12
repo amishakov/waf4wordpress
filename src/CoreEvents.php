@@ -666,6 +666,7 @@ final class CoreEvents
      */
     public function after_login($username, $user)
     {
+        /** @phpstan-ignore-next-line function.alreadyNarrowedType */
         if (!is_a($user, 'WP_User')) {
             return;
         }
